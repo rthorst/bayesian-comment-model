@@ -28,8 +28,8 @@ plt.savefig("comments_frequency.png")
 with pm.Model() as model:
 
     # The rates of these poissons are exponentially distributed.
-    lam1 = pm.Exponential('Upvote Rate: Not Viral', lam=1)
-    lam2 = pm.Exponential('Upvote Rate: Viral ', lam=1)
+    lam1 = pm.Exponential('Comment Rate: Not Viral', lam=1)
+    lam2 = pm.Exponential('Comment Rate: Viral ', lam=1)
 
     # The data come from a mixture of poissons with rates lam1, lam2.
     pois1 = pm.Poisson.dist(mu=lam1)
