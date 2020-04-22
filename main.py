@@ -20,12 +20,8 @@ plt.yscale("log", nonposy="clip")
 plt.xlabel("# Comments")
 plt.ylabel("Log(frequency)")
 plt.savefig("comments_frequency.png")
-plt.show()
+#plt.show()
 
-# Toy data. 
-#X = np.array([0, 3, 1, 2, 3, 2, 3, 1, 3, 1, 4, 50, 40, 40, 30, 50])
-#for _ in range(3):
-#    X = np.vstack(X)
 
 # Fit model.
 # 2-Mixture Poisson using iterable of distributions.
@@ -50,5 +46,4 @@ with pm.Model() as model:
 
 # Plot posterior.
 pm.plot_posterior(trace)
-plt.show()
-plt.savefig("Posteriors")
+plt.savefig("posteriors.png")
