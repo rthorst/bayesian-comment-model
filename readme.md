@@ -12,6 +12,6 @@ The dataset used is the distribution of comments on Hacker Rank posts. Some post
 
 The model is a mixture of two poisson distributions: one controlling the comment rate for non-viral posts, and one controlling the comment rate for viral posts. As a bonus, the mixture parameter w estimates the proportion of viral posts. The wide divergence in rates between the two distributions supports the use of a mixture model.
 
-[Model diagram in plate notation](model-plate-diagram.png)
+![Model diagram in plate notation](model-plate-diagram.png)
 
 ![Posteriors](posteriors.png)
