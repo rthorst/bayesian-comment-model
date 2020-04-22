@@ -6,7 +6,7 @@ Social media comments are unruly; a few posts go viral (gaining lots of comments
 
 The dataset used is the distribution of comments on Hacker Rank posts. Some posts gain a large number of comments, while most gain very few comments.
 
-[Insert figure here: histogram]
+![Histogram][histogram.png]
 
 # Model 
 
@@ -14,4 +14,4 @@ The model is a mixture of two poisson distributions: one controlling the comment
 
 [Model diagram in plate notation]
 
-[Insert posteriors]
+![Posteriors][posteriors.png]
